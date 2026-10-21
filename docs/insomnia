@@ -1,0 +1,52 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: taskflow-api
+meta:
+  id: wrk_1b976b3614d34a9093e1854d63f2d7d3
+  created: 1792613561958
+  modified: 1792613561958
+  description: ""
+collection:
+  - url: "{{ _.base_url }}health"
+    name: HealthController
+    meta:
+      id: req_154bf19b983d4551bfadc1ba6298e9da
+      created: 1792613686314
+      modified: 1792613718520
+      isPrivate: false
+      description: ""
+      sortKey: -1792613686314
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_066eaf5717f5487b02abd2d2155e04d923e4c29a
+    created: 1792613561960
+    modified: 1792613561960
+environments:
+  name: Base Environment
+  meta:
+    id: env_066eaf5717f5487b02abd2d2155e04d923e4c29a
+    created: 1792613561959
+    modified: 1792614356815
+    isPrivate: false
+  data:
+    base_url: ""
+  subEnvironments:
+    - name: local
+      meta:
+        id: env_d26819e7fea7403d99ce08aec1ec2b54
+        created: 1792614204655
+        modified: 1792614329391
+        isPrivate: false
+        sortKey: 1792614204655
+      data:
+        base_url: http://127.0.0.1:8000/api/v1/
