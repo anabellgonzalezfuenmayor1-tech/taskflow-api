@@ -8,21 +8,18 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('projects', function (Blueprint $table) {
+        Schema::create('project_user', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 150);
-            $table->text('description');
-            $table->date('start_date');
-            $table->date('end_date');
-            $table->string('status', 20)->default('planning');
-            $table->foreignId('created_by')->constrained('users');
+            $table->foreignId('project_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
-            $table->softDeletes();
+
+            $table->unique(['project_id', 'user_id']);
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('projects');
+        Schema::dropIfExists('project_user');
     }
 };
