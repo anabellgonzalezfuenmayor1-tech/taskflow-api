@@ -31,3 +31,12 @@ El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y e
 - Diagrama entidad-relación en docs/er.md
 
 [0.1.0]: https://github.com/USUARIO/taskflow-api/releases/tag/v0.1.0
+
+## [Unreleased]
+
+## [0.2.0] - 2026-10-22
+### Added
+- Campo is_active en usuarios
+- …(lo que estaba en Unreleased)
+
+## [0.1.0] - 2026-10-07
