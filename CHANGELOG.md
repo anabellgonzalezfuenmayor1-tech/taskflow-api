@@ -21,4 +21,13 @@ El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y e
 - `README.md` y `LICENSE.md`.
 
 [Unreleased]: https://github.com/USUARIO/taskflow-api/compare/v0.1.0...HEAD
+
+### Added
+- Campo is_active en usuarios
+- Tablas projects, project_user y tasks con llaves foráneas
+- Enums ProjectStatus, TaskStatus y TaskPriority
+- Modelos Project y Task con relaciones
+- Factories y seeder con datos de ejemplo
+- Diagrama entidad-relación en docs/er.md
+
 [0.1.0]: https://github.com/USUARIO/taskflow-api/releases/tag/v0.1.0

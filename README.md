@@ -98,8 +98,21 @@ php artisan migrate
 # 6. Iniciar el servidor de desarrollo
 php artisan serve
 ```
+---
 
 La API quedará disponible en `http://127.0.0.1:8000/api/v1`.
+## Modelo de datos
+
+Diagrama entidad-relación: [docs/er.md](docs/er.md)
+
+## Datos de prueba
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+Crea un administrador (admin@taskflow.test / password), 8 colaboradores,
+4 proyectos y 24 tareas. Solo para desarrollo local.
 
 ---
 
